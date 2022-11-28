@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'MyMoney_ui.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(640, 480)
+        self.gridLayout = QtWidgets.QGridLayout(Form)
+        self.gridLayout.setObjectName("gridLayout")
+        self.grid_main = QtWidgets.QGridLayout()
+        self.grid_main.setObjectName("grid_main")
+        self.hbox_bottom = QtWidgets.QHBoxLayout()
+        self.hbox_bottom.setObjectName("hbox_bottom")
+        self.btn_add = QtWidgets.QPushButton(Form)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.btn_add.setFont(font)
+        self.btn_add.setObjectName("btn_add")
+        self.hbox_bottom.addWidget(self.btn_add)
+        self.btn_del = QtWidgets.QPushButton(Form)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.btn_del.setFont(font)
+        self.btn_del.setObjectName("btn_del")
+        self.hbox_bottom.addWidget(self.btn_del)
+        self.btn_update = QtWidgets.QPushButton(Form)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.btn_update.setFont(font)
+        self.btn_update.setObjectName("btn_update")
+        self.hbox_bottom.addWidget(self.btn_update)
+        self.l_balance = QtWidgets.QLabel(Form)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setItalic(True)
+        self.l_balance.setFont(font)
+        self.l_balance.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.l_balance.setObjectName("l_balance")
+        self.hbox_bottom.addWidget(self.l_balance)
+        self.lcd_balance = QtWidgets.QLCDNumber(Form)
+        self.lcd_balance.setObjectName("lcd_balance")
+        self.hbox_bottom.addWidget(self.lcd_balance)
+        self.grid_main.addLayout(self.hbox_bottom, 3, 0, 1, 1)
+        self.tv_table = QtWidgets.QTableView(Form)
+        self.tv_table.setObjectName("tv_table")
+        self.grid_main.addWidget(self.tv_table, 1, 0, 1, 1)
+        self.hbox_middle = QtWidgets.QHBoxLayout()
+        self.hbox_middle.setObjectName("hbox_middle")
+        self.l_date_end_2 = QtWidgets.QLabel(Form)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.l_date_end_2.setFont(font)
+        self.l_date_end_2.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.l_date_end_2.setObjectName("l_date_end_2")
+        self.hbox_middle.addWidget(self.l_date_end_2)
+        self.d_date_start = QtWidgets.QDateEdit(Form)
+        self.d_date_start.setObjectName("d_date_start")
+        self.hbox_middle.addWidget(self.d_date_start)
+        self.l_date_end = QtWidgets.QLabel(Form)
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.l_date_end.setFont(font)
+        self.l_date_end.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.l_date_end.setObjectName("l_date_end")
+        self.hbox_middle.addWidget(self.l_date_end)
+        self.d_date_stop = QtWidgets.QDateEdit(Form)
+        self.d_date_stop.setObjectName("d_date_stop")
+        self.hbox_middle.addWidget(self.d_date_stop)
+        self.grid_main.addLayout(self.hbox_middle, 2, 0, 1, 1)
+        self.gridLayout.addLayout(self.grid_main, 0, 0, 1, 1)
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "MyMoney"))
+        self.btn_add.setText(_translate("Form", "добавить"))
+        self.btn_del.setText(_translate("Form", "удалить"))
+        self.btn_update.setText(_translate("Form", "обновить"))
+        self.l_balance.setText(_translate("Form", "Баланс:"))
+        self.l_date_end_2.setText(_translate("Form", "Период начало: "))
+        self.l_date_end.setText(_translate("Form", "конец: "))
+
